@@ -1,1 +1,139 @@
-{}
+{ 
+    "games": [
+        {
+            "id": 1,
+            "image": "Pictures/God of War_20250126011339.jpg",
+            "title": "GOD OF WAR 2018",
+            "genre": "Action",
+            "platform": "Playstation",
+            "rating": 9.5,
+            "description": "Follow Kratos and his son, Atreus, in their journey to take the ashes of Kratos' wife and Atreus' mother ,Faye, to the highest peak in all the realms."
+        },
+        {
+            "id": 2,
+            "image": "Pictures/FC 25 UT Squad Battles (In Menus)_2.jpg",
+            "title": "FC 25",
+            "genre": "Sports",
+            "platform": "Playstation",
+            "rating": 8.7,
+            "description": "Come play and enjoy football with the greatest!"
+        },
+        {
+            "id": 3,
+            "image": "Pictures/Marvel's Spider-Man_20250504140219.jpg",
+            "title": "SPIDERMAN",
+            "genre": "Action",
+            "platform": "Playstation",
+            "rating":  9.0,
+            "description": "New York is in trouble but you know the friendly neighborhood spderman is around to fight the dangers!"
+        },
+        {
+            "id": 4,
+            "image": "Pictures/Assassin's Creed® Valhalla_20250607015815.jpg",
+            "title": "ASSASSIN'S CREED: VALHALLA",
+            "genre": "Adventure" ,
+            "platform": "Playstation",
+            "rating":  9.3,
+            "description": "Play as Eivor and lead your clan in a brutal yet epic journey of conquest, settlement and hidden secrets across the land!"
+        },
+        { 
+            "id": 5,
+            "image": "Pictures/Grand Theft Auto V_20250514223544.jpg",
+            "title": "GRAND THEFT AUTO V",
+            "genre": "Action",
+            "platform": "Playstation",
+            "rating":  9.6,
+            "description": "Enjoy the game with Michael, Franklin and Trevor as they battle corrupt government officials while also dealing with their personal demons such as betrayals!"
+        },
+        {
+            "id": 6,
+            "image": "Pictures/Watch_Dogs 2 10_10_2022 4_09_01 PM.png",
+            "title": "WATCHDOGS",
+            "genre": "Adventure",
+            "platform": "PC",
+            "rating":  7.9,
+            "description": "Open World hacking adventure that will leave you yearning for more!"
+        },
+        {
+            "id": 7,
+            "image": "Pictures/Marvel's Guardians of the Galaxy_20250528221441.jpg",
+            "title": "MARVEL'S GUARDIANS OF THE GALAXY",
+            "genre": "Adventure",
+            "platform": "Xbox",
+            "rating": 8.5,
+            "description": "Yet another episode of figting across the galaxy with your heroes, Guardians of the Galaxy!"
+        },
+        {
+            "id": 8,
+            "image": "Pictures/Need for Speed™ Heat_20250524160359.jpg",
+            "title": "NEED FOR SPEED: HEAT",
+            "genre": "Sports",
+            "platform": "PC",
+            "rating": 9.2,
+            "description": "You know what time it is as you get behind the wheels and show the world who is boss!"
+        },
+        {
+            "id": 9,
+            "image": "Pictures/God of War Ragnarök_20250311023403.jpg",
+            "title": "GOD OF WAR RAGNAROK",
+            "genre": "Adventure",
+            "platform": "Playstation",
+            "rating": 9.4,
+            "description": "Ragnarok is coming!"
+        },
+        {
+            "id": 10,
+            "image": "Pictures/WWE 2K24_20250415021101.jpg",
+            "title": "WWE 2K24",
+            "genre": "Sports",
+            "platform": "Xbox",
+            "rating": 8.7,
+            "description": "Will Cody Rhodes finish his story?"
+        },
+        {
+            "id": 11,
+            "image": "Pictures/Fortnite_20250207222545.jpg",
+            "title": "FORTNITE",
+            "genre": "Sports",
+            "platform": "PC",
+            "rating":  8.4,
+            "description": "Chill with your friends and enjoy the chaos that comes with Fortnite!"
+        },
+        {
+            "id": 12,
+            "image": "Pictures/Marvel's Spider-Man_ Miles Morales_20250527034347.jpg",
+            "title": "SPIDERMAN: MILES MORALES",
+            "genre": "Action",
+            "platform": "PC",
+            "rating":  9.3,
+            "description": "Does Miles have what it takes to protect New York as the friendly neighborhood Spderman takes a small leave?"
+        },
+        {
+            "id": 13,
+            "image": "Pictures/Ghost of Tsushima_20250606011004.jpg",
+            "title": "GHOST OF TSUSHIMA",
+            "genre": "Action",
+            "platform": "Xbox",
+            "rating":  8.7,
+            "description": "Defend your homeland as Jin Sakai, a warrior torn between honor and necessity, from Mongol invaders in feudal Japan!"
+        },
+        {
+            "id": 14,
+            "image": "Pictures/Injustice 2_20250523222339.jpg",
+            "title": "INJUSTICE 2",
+            "genre": "Action",
+            "platform": "Xbox",
+            "rating": 8.5,
+            "description": "Superman vs Batman: Who comes out on top?"
+        },
+        {
+            "id": 15,
+            "image": "Pictures/Apex Legends_20250621011125.jpg",
+            "title": "APEX LEGENDS",
+            "genre": "Action",
+            "platform": "Xbox",
+            "rating":  8.9,
+            "description": "Shoot, survive and make yourself the Apex Legend no pun intended!"
+        }
+    ]
+}
