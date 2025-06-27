@@ -55,3 +55,5 @@ function handleFilterorSearch() {
 genreFilter.addEventListener('change', handleFilterorSearch);
 platformFilter.addEventListener('change', handleFilterorSearch);
 searchInput.addEventListener('input', handleFilterorSearch);
+
+document.addEventListener('DOMContentLoaded', fetchGames);
