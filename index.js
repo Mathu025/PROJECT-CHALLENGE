@@ -20,6 +20,14 @@ function fetchGames() {
 function renderGames(games = allGames) {
     gameList.innerHTML = '';
 
+    if (games.length === 0) {
+        const message = document.createElement('p')
+        message.className = 'text-center text-red-400 text-xl col-span-full';
+        message.textContent = 'No games found matching your criteria!'
+        gameList.appendChild(message)
+        return;
+    }
+
     games.forEach(game => {
         const div = document.createElement('div');
         div.className = 'game-card border rounded-2xl p-4';
