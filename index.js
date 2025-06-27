@@ -52,3 +52,6 @@ function handleFilterorSearch() {
     renderGames(filtered)
 }
 
+genreFilter.addEventListener('change', handleFilterorSearch);
+platformFilter.addEventListener('change', handleFilterorSearch);
+searchInput.addEventListener('input', handleFilterorSearch);
