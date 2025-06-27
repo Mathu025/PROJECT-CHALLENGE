@@ -10,32 +10,35 @@
     <h1 class="font-bold text-center text-4xl mb-4">🎮 VIDEO GAME EXPLORER</h1>
 
     <div class="flex justify-center gap-4 mb-4">
-        <input type="text" placeholder="Search for Game" class="border rounded p-1">
-        <select class="border rounded p-1  bg-gray-900 text-white">
+
+        <input id="searchInput" type="text" placeholder="Search for Game" class="border rounded p-1">
+
+        <select id="genreFilter" class="border rounded p-1  bg-gray-900 text-white">
             <option value="">All Genres</option>
-            <option value="">Action</option>
-            <option value="">Sports</option>
-            <option value="">Adventure</option>
+            <option value="Action">Action</option>
+            <option value="Sports">Sports</option>
+            <option value="Adventure">Adventure</option>
         </select>
-        <select class="border rounded p-1  bg-gray-900 text-white">
+
+        <select id="platformFilter" class="border rounded p-1  bg-gray-900 text-white">
             <option value="">All Platforms</option>
-            <option value="">PC</option>
-            <option value="">PlayStation</option>
-            <option value="">Xbox</option>
+            <option value="PC">PC</option>
+            <option value="PlayStation">PlayStation</option>
+            <option value="Xbox">Xbox</option>
         </select>
     </div>
 
-    <div class="grid grid-cols-5 gap-6 p-4">
+    <div id="gameList" class="grid grid-cols-5 gap-6 p-4">
 
-        <div class="border rounded-2xl p-4">
-            <img class="border rounded" src="./Pictures/God of War_20250126011339.jpg" alt="God of War 2018" width="350" height="250"><br>
+        <div class="game-card border rounded-2xl p-4" data-genre="Action" data-platform="PlayStation">
+            <img class="border rounded" src="Pictures/God of War_20250126011339.jpg" alt="God of War 2018" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>GOD OF WAR 2018</strong></h3>
             <p><strong>Genre:</strong> Action</p>
             <p><strong>Platform:</strong> PlayStation</p>
             <p><strong>Rating:</strong> 9.5</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Sports" data-platform="PlayStation">
             <img class="border rounded" src="Pictures/FC 25 UT Squad Battles (In Menus)_2.jpg" alt="FC 25" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>FC 25</strong></h3>
             <p><strong>Genre:</strong> Sports</p>
@@ -43,7 +46,7 @@
             <p><strong>Rating:</strong> 8.7</p>
         </div>
         
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Action" data-platform="PlayStation">
             <img class="border rounded" src="Pictures/Marvel's Spider-Man_20250504140219.jpg" alt="Spiderman" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>SPIDERMAN</strong></h3>
             <p><strong>Genre:</strong> Action</p>
@@ -51,15 +54,15 @@
             <p><strong>Rating:</strong> 9.0</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Adventure" data-platform="PlayStation">
             <img class="border rounded" src="Pictures/Assassin's Creed® Valhalla_20250607015815.jpg" alt="Assassin's Creed Valhalla" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>ASSASSIN'S CREED: VALHALLA</strong></h3>
             <p><strong>Genre:</strong> Adventure</p>
             <p><strong>Platform:</strong> PlayStation</p>
-            <p><strong>Rating:</strong> 9.8</p>
+            <p><strong>Rating:</strong> 9.3</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Action" data-platform="Playstation">
             <img class="border rounded" src="Pictures/Grand Theft Auto V_20250514223544.jpg" alt="GTA V" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>GRAND THEFT AUTO V</strong></h3>
             <p><strong>Genre:</strong> Action</p>
@@ -67,7 +70,7 @@
             <p><strong>Rating:</strong> 9.6</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Adventure" data-platform="PC">
             <img class="border rounded" src="Pictures/Watch_Dogs 2 10_10_2022 4_09_01 PM.png" alt="Watchdogs" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>WATCHDOGS</strong></h3>
             <p><strong>Genre:</strong> Adventure</p>
@@ -75,14 +78,15 @@
             <p><strong>Rating:</strong> 7.9</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Adventure" data-platform="Xbox">
             <img class="border rounded" src="Pictures/Marvel's Guardians of the Galaxy_20250528221441.jpg" alt="Marvel's Guardians of the Galaxy" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>MARVEL'S GUARDIANS OF THE GALAXY</strong></h3>
             <p><strong>Genre:</strong> Adventure</p>
             <p><strong>Platform:</strong> Xbox</p>
             <p><strong>Rating:</strong> 8.5</p>
         </div>
-        <div class="border rounded-2xl p-4">
+
+        <div class="game-card border rounded-2xl p-4" data-genre="Sports" data-platform="PC">
             <img class="border rounded" src="Pictures/Need for Speed™ Heat_20250524160359.jpg" alt="NFS HEAT" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>NEED FOR SPEED: HEAT</strong></h3>
             <p><strong>Genre:</strong> Sports</p>
@@ -90,7 +94,7 @@
             <p><strong>Rating:</strong> 9.2</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Adventure" data-platform="PlayStation">
             <img class="border rounded" src="Pictures/God of War Ragnarök_20250311023403.jpg" alt="God of war Ragnarok" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>GOD OF WAR RAGNAROK</strong></h3>
             <p><strong>Genre:</strong> Adventure</p>
@@ -98,7 +102,7 @@
             <p><strong>Rating:</strong> 9.4</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Sports" data-platform="Xbox">
             <img class="border rounded" src="Pictures/WWE 2K24_20250415021101.jpg" alt="WWE 2K24" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>WWE 2K24</strong></h3>
             <p><strong>Genre:</strong> Sports</p>
@@ -106,7 +110,7 @@
             <p><strong>Rating:</strong> 8.7</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Sports" data-platform="PC">
             <img class="border rounded" src="Pictures/Fortnite_20250207222545.jpg" alt="Fortnite" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>FORTNITE</strong></h3>
             <p><strong>Genre:</strong> Sports</p>
@@ -114,7 +118,7 @@
             <p><strong>Rating:</strong> 8.4</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Action" data-platform="PC">
             <img class="border rounded" src="Pictures/Marvel's Spider-Man_ Miles Morales_20250527034347.jpg" alt="Spiderman: Miles Morales" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>SPIDERMAN: MILES MORALES</strong></h3>
             <p><strong>Genre:</strong> Action</p>
@@ -122,7 +126,7 @@
             <p><strong>Rating:</strong> 9.3</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Action" data-platform="Xbox">
             <img class="border rounded" src="Pictures/Ghost of Tsushima_20250606011004.jpg" alt="Ghost of Tsushima" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>GHOST OF TSUSHIMA</strong></h3>
             <p><strong>Genre:</strong> Action</p>
@@ -130,7 +134,7 @@
             <p><strong>Rating:</strong> 8.7</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Action" data-platform="Xbox">
             <img class="border rounded" src="Pictures/Injustice 2_20250523222339.jpg" alt="Injustice 2" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>INJUSTICE 2</strong></h3>
             <p><strong>Genre:</strong> Action</p>
@@ -138,7 +142,7 @@
             <p><strong>Rating:</strong> 8.5</p>
         </div>
 
-        <div class="border rounded-2xl p-4">
+        <div class="game-card border rounded-2xl p-4" data-genre="Action" data-platform="Xbox">
             <img class="border rounded" src="Pictures/Apex Legends_20250621011125.jpg" alt="Apex Legends" width="350" height="250"><br>
             <h3 class="text-2xl mb-2"><strong>APEX LEGENDS</strong></h3>
             <p><strong>Genre:</strong> Action</p>
