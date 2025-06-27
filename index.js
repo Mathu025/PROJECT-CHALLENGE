@@ -16,3 +16,23 @@ function fetchGames() {
         })
         .catch(err => console.error('Failed to load games from the server!', err));
 }
+
+function renderGames() {
+    gameList.innerHTML = '';
+
+    games.forEach(game => {
+        const div = document.createElement('div');
+        div.className = 'game-card border rounded-2xl p-4';
+        div.setAttribute('data-genre', game.genre);
+        div.setAttribute('data-platform', game.platform)
+
+        div.innerHTML = `
+            <img class="border rounded" src="${game.image}" alt="${game.name} width="350" height="250"><br>
+            <h3 class="text-2xl mb-2"><strong>${game.name}</strong></h3>
+            <p><strong>Genre:</strong>${game.genre}</p>
+            <p><strong>Platform:</strong>game.Platform</p>
+            <p><strong>Rating:</strong>${game.rating}</p>
+        `;
+        gameList.appendChild(div);
+    })
+}
