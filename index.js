@@ -36,3 +36,19 @@ function renderGames() {
         gameList.appendChild(div);
     })
 }
+
+function handleFilterorSearch() {
+    const SelectedGenre = genreFilter.value.toLowerCase();
+    const SelectedPlatform = platformFilter.value.toLowerCase();
+    const searchTerm = searchInput.value.toLowerCase();
+
+    const filtered = allGames.filter(game => {
+        const matchesSearch = game.name.toLowerCase().includes(searchTerm);
+        const matchesGenre = SelectedGenre === '' || game.genre.toLowerCase() === SelectedGenre;
+        const matchesPlatform = SelectedPlatform === '' || game.platform.toLowerCase() === SelectedPlatform;
+        
+        return matchesGenre && matchesPlatform && matchesSearch;
+    });
+    renderGames(filtered)
+}
+
