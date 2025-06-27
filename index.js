@@ -40,7 +40,18 @@ function renderGames(games = allGames) {
             <p><strong>Genre:</strong> ${game.genre}</p>
             <p><strong>Platform:</strong> ${game.platform}</p>
             <p><strong>Rating:</strong> ${game.rating}</p>
+            <button class="button mt-2 px-3 py-1 hover: bg-blue-500 text-white rounded cursor-pointer">View Details</button>
+            <div class="content mt-2 hidden">
+                <p><strong>Description:</strong> ${game.description}</p>
+            </div>
         `;
+        const button = div.querySelector('.button');
+        const content = div.querySelector('.content');
+
+        button.addEventListener('click', () => {
+            content.classList.toggle('hidden');
+            button.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details'
+        });
         gameList.appendChild(div);
     })
 }
