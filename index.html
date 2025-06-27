@@ -6,21 +6,25 @@
     <title>VIDEO GAME EXPLORER</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body class="m-[40px] bg-gray-900 text-white ">
+<body class="m-[40px] bg-white text-black dark:bg-gray-900 dark:text-white">
     <h1 class="font-bold text-center text-4xl mb-4">🎮 VIDEO GAME EXPLORER</h1>
+    <div class="flex justify-center mb-4">
+        <button id="theme" class="px-4 py-2 bg-white text-black rounded hover:bg-amber-700 dark:bg-gray-700 dark:text-white">Switch to Light Mode</button>
+
+    </div>
 
     <div class="flex justify-center gap-4 mb-4">
 
-        <input id="searchInput" type="text" placeholder="Search for Game" class="border rounded p-1">
+        <input id="searchInput" type="text" placeholder="Search for Game" class="border rounded p-1 bg-white text-black dark:bg-gray-800 dark:text-white">
 
-        <select id="genreFilter" class="border rounded p-1  bg-gray-900 text-white">
+        <select id="genreFilter" class="border rounded p-1 bg-white text-black dark:bg-gray-900 dark:text-white">
             <option value="">All Genres</option>
             <option value="Action">Action</option>
             <option value="Sports">Sports</option>
             <option value="Adventure">Adventure</option>
         </select>
 
-        <select id="platformFilter" class="border rounded p-1  bg-gray-900 text-white">
+        <select id="platformFilter" class="border rounded p-1  bg-white text-black dark:bg-gray-900 dark:text-white">
             <option value="">All Platforms</option>
             <option value="PC">PC</option>
             <option value="PlayStation">PlayStation</option>
@@ -28,8 +32,8 @@
         </select>
     </div>
 
-    <div id="gameList" class="grid grid-cols-5 gap-6 p-4">
-        
+    <div id="gameList" class="grid grid-cols-5 gap-6 p-4"></div>
+
     <script src="./index.js"></script>
 </body>
 </html>
