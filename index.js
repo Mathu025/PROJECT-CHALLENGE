@@ -17,7 +17,7 @@ function fetchGames() {
         .catch(err => console.error('Failed to load games from the server!', err));
 }
 
-function renderGames() {
+function renderGames(games = allGames) {
     gameList.innerHTML = '';
 
     games.forEach(game => {
@@ -27,11 +27,11 @@ function renderGames() {
         div.setAttribute('data-platform', game.platform)
 
         div.innerHTML = `
-            <img class="border rounded" src="${game.image}" alt="${game.name} width="350" height="250"><br>
-            <h3 class="text-2xl mb-2"><strong>${game.name}</strong></h3>
-            <p><strong>Genre:</strong>${game.genre}</p>
-            <p><strong>Platform:</strong>game.Platform</p>
-            <p><strong>Rating:</strong>${game.rating}</p>
+            <img class="border rounded" src="${game.image}" alt="${game.title} width="350" height="250"><br>
+            <h3 class="text-2xl mb-2"><strong>${game.title}</strong></h3>
+            <p><strong>Genre:</strong> ${game.genre}</p>
+            <p><strong>Platform:</strong> ${game.platform}</p>
+            <p><strong>Rating:</strong> ${game.rating}</p>
         `;
         gameList.appendChild(div);
     })
@@ -43,9 +43,9 @@ function handleFilterorSearch() {
     const searchTerm = searchInput.value.toLowerCase();
 
     const filtered = allGames.filter(game => {
-        const matchesSearch = game.name.toLowerCase().includes(searchTerm);
-        const matchesGenre = SelectedGenre === '' || game.genre.toLowerCase() === SelectedGenre;
-        const matchesPlatform = SelectedPlatform === '' || game.platform.toLowerCase() === SelectedPlatform;
+        const matchesSearch = game.title && game.title.toLowerCase().includes(searchTerm);
+        const matchesGenre = SelectedGenre === '' || game.genre && game.genre.toLowerCase() === SelectedGenre;
+        const matchesPlatform = SelectedPlatform === '' || game.platform && game.platform.toLowerCase() === SelectedPlatform;
         
         return matchesGenre && matchesPlatform && matchesSearch;
     });
